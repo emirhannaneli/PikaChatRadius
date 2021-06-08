@@ -1,6 +1,5 @@
 package xyz.pikadev.Events;
 
-import org.bukkit.Color;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -9,6 +8,7 @@ import xyz.pikadev.Handlers.PlayerRadius;
 
 public class OnChat implements Listener {
     PlayerRadius playerRadius = new PlayerRadius();
+
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();

@@ -5,3 +5,6 @@ api-version: 1.16
 authors: [ Pikadev ]
 description: Pikadev Tarafından Tasarlanmış Bir Eklentidir.
 website: pikadev.xyz
+commands:
+  pcr:
+    description: Ana Komut
