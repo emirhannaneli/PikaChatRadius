@@ -4,6 +4,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import xyz.pikadev.Commands.PCR;
 import xyz.pikadev.Events.OnChat;
+import xyz.pikadev.Events.OnCommand;
 import xyz.pikadev.Events.OnLogin;
 import xyz.pikadev.Events.OnMove;
 
@@ -25,6 +26,7 @@ public final class PikaChatRadius extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new OnChat(), this);
         getServer().getPluginManager().registerEvents(new OnMove(), this);
         getServer().getPluginManager().registerEvents(new OnLogin(), this);
+        getServer().getPluginManager().registerEvents(new OnCommand(), this);
         //Bstats
         Metrics metrics = new Metrics(this, 11617);
     }
