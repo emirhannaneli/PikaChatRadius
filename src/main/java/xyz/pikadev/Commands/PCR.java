@@ -39,7 +39,7 @@ public class PCR implements CommandExecutor {
 
     private void about(CommandSender player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&6Pika&edev Sunar..."));
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"  &7&l=> &6Version: 1.0-SNAPSHOT"));
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"  &7&l=> &6Version: "+plugin.getDescription().getVersion()));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"  &7&l=> &6Web: https://pikadev.xyz"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"  &7&l=> &6Source Code: https://github.com/PiikaDev/PikaChatRadius"));
     }
