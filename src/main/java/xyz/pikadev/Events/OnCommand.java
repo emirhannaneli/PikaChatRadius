@@ -14,6 +14,7 @@ public class OnCommand implements Listener {
                 e.getMessage().startsWith("/minecraft:msg") ||
                 e.getMessage().startsWith("/minecraft:w") ||
                 e.getMessage().startsWith("/minecraft:tell") ||
+                e.getMessage().startsWith("/minecraft:me") ||
                 e.getMessage().startsWith("/minecraft:r")
         ) {
             if(!(e.getPlayer().isOp()) || !(e.getPlayer().hasPermission("pcr.admin"))){
